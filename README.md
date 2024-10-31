@@ -3,7 +3,7 @@
 
 Each folder contains the `js` file needed to use the `jsui` objects in Max which should be copied into the file path of the patch you want to use it in. They also each contain a maxpat file marked with `-Help`, which demo all the features of each object.
 
-***Should you use any of the code (edited or unedited) in a published device, please provide me with appropriate credit where possible, and please do not remove the authorship at the top of each JavaScript File.***
+***Should you use any of the code (edited or unedited) in a published device, please provide appropriate credit and do not remove the authorship at the top of each JavaScript File.***
 
 ## MS_ADSRUI
 Based on the stock `live.adsrui` object in Max and built to work with the live.adsr object, though can be used with other envelope code (e.g. custom `gen~` envelopes). The **MS_ADSRUI** offers all the same functionality as the live version as well as further benefits:
