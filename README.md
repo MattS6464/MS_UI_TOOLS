@@ -1,5 +1,5 @@
 # MS_UI_TOOLS
-Each of the **_MS_UI_TOOLS_** objects fulfils a unique role in the user interface of a Max patch, whether it be for Max standalone or a MaxForLive device. They styled like user interface objects already present in Live’s stock devices. By providing the open-source code, objects can be easily used as a starting point to build upon and edit to fit specific case uses.
+**_MS_UI_TOOLS_** is a collection of user interface objects coded in JavaScript for use in Max's `jsui` object. Each object fulfils a unique role in the user interface of a Max patch, whether it be for Max standalone or a MaxForLive device. They styled like user interface objects already present in Live’s stock devices. By providing the open-source code, objects can be easily used as a starting point to build upon and edit to fit specific case uses.
 
 Each folder contains the `js` file needed to use the `jsui` objects in Max which should be copied into the file path of the patch you want to use it in. They also each contain a maxpat file marked with `-Help`, which demo all the features of each object.
 
