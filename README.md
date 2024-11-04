@@ -12,7 +12,7 @@ Based on the stock `live.adsrui` object in Max and built to work with the live.a
 *	Default values for each of the variables can be set by double clicking any of the handles.
 *	Variable padding to move the envelope display in from the edges of the object.
 
-The current version of the `live.adsrui` object has a glitch in which it is not possible to automate envelope parameters when they are tethered to numberboxes in live. Currently if you try this, the automation will be instantly disbaled on playback. The **MS_ADSRUI** does not have this issue, thus is an ideal solution for adding a fully functional envelope user interface to a MaxForLive device.
+In Live 11 (Version 11.3.35 running Max Version 8.5.8 or earlier) the `live.adsrui` object has a glitch in which it is not possible to automate envelope parameters when they are tethered to numberboxes in live. Currently if you try this, the automation will be instantly disbaled on playback. The **MS_ADSRUI** does not have this issue, thus is an ideal solution for adding a fully functional envelope user interface to a MaxForLive device.
 
 
 ## MS_CELL
