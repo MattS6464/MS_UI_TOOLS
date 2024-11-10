@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 380.0, 100.0, 1396.0, 799.0 ],
+		"rect" : [ 82.0, 100.0, 996.0, 799.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
@@ -31,7 +31,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 380.0, 126.0, 1396.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 996.0, 773.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -1069,7 +1069,7 @@
 
 															}
  ],
-														"originid" : "pat-96"
+														"originid" : "pat-203"
 													}
 ,
 													"patching_rect" : [ 64.705885052680969, 7.058823823928833, 61.0, 22.0 ],
@@ -1592,7 +1592,7 @@
 
 											}
  ],
-										"originid" : "pat-94"
+										"originid" : "pat-201"
 									}
 ,
 									"patching_rect" : [ 15.0, 503.0, 442.0, 187.0 ],
@@ -2462,7 +2462,7 @@
 
 															}
  ],
-														"originid" : "pat-101"
+														"originid" : "pat-208"
 													}
 ,
 													"patching_rect" : [ 64.705885052680969, 7.058823823928833, 61.0, 22.0 ],
@@ -2916,7 +2916,7 @@
 
 											}
  ],
-										"originid" : "pat-99"
+										"originid" : "pat-206"
 									}
 ,
 									"patching_rect" : [ 15.0, 318.0, 442.0, 170.0 ],
@@ -3606,7 +3606,7 @@
 
 															}
  ],
-														"originid" : "pat-106"
+														"originid" : "pat-213"
 													}
 ,
 													"patching_rect" : [ 64.705885052680969, 7.058823823928833, 61.0, 22.0 ],
@@ -3991,7 +3991,7 @@
 
 											}
  ],
-										"originid" : "pat-104"
+										"originid" : "pat-211"
 									}
 ,
 									"patching_rect" : [ 15.0, 152.0, 442.0, 151.0 ],
@@ -4008,8 +4008,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 77.0, 547.0, 33.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "This tab contains three versions of the MS_ADSRUI that have all the load messages needed for use. \nFeel free to copy and paste any of them to use in your own patches",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -4022,14 +4029,21 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 15.0, 291.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-91"
+						"originid" : "pat-198"
 					}
 ,
 					"patching_rect" : [ 333.333338499069214, 23.809524178504944, 70.0, 22.0 ],
@@ -4058,7 +4072,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1396.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 996.0, 773.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -4421,7 +4435,7 @@
 
 											}
  ],
-										"originid" : "pat-110"
+										"originid" : "pat-217"
 									}
 ,
 									"patching_rect" : [ 607.5, 166.0, 105.0, 22.0 ],
@@ -4637,7 +4651,7 @@
 
 											}
  ],
-										"originid" : "pat-112"
+										"originid" : "pat-219"
 									}
 ,
 									"patching_rect" : [ 246.5, 166.0, 105.0, 22.0 ],
@@ -4853,7 +4867,7 @@
 
 											}
  ],
-										"originid" : "pat-114"
+										"originid" : "pat-221"
 									}
 ,
 									"patching_rect" : [ 788.0, 166.0, 105.0, 22.0 ],
@@ -5069,7 +5083,7 @@
 
 											}
  ],
-										"originid" : "pat-116"
+										"originid" : "pat-223"
 									}
 ,
 									"patching_rect" : [ 427.0, 166.0, 105.0, 22.0 ],
@@ -5285,7 +5299,7 @@
 
 											}
  ],
-										"originid" : "pat-118"
+										"originid" : "pat-225"
 									}
 ,
 									"patching_rect" : [ 66.0, 166.0, 105.0, 22.0 ],
@@ -5500,8 +5514,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 77.0, 792.0, 20.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI has a variety of parameters for changing its appearance for personalised use. See how each of the below controls change the display.",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -5514,8 +5535,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 15.0, 291.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -5718,7 +5746,7 @@
 
 							}
  ],
-						"originid" : "pat-108"
+						"originid" : "pat-215"
 					}
 ,
 					"patching_rect" : [ 287.301591753959656, 23.809524178504944, 43.0, 22.0 ],
@@ -5747,7 +5775,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1396.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 996.0, 773.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -6501,8 +6529,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 77.0, 1001.0, 33.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "Like live.adsrui, MS_ADSRUI has optional control over parameters that are not always needed in every use of an envelope. These are: curve controls, initial gain, peak gain, and final gain. This tab shows you how to toggle each of these on and off to fit your case use.",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -6515,8 +6550,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 15.0, 291.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -6680,7 +6722,7 @@
 
 							}
  ],
-						"originid" : "pat-120"
+						"originid" : "pat-227"
 					}
 ,
 					"patching_rect" : [ 88.888890266418457, 23.809524178504944, 61.0, 22.0 ],
@@ -6709,7 +6751,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1396.0, 773.0 ],
+						"rect" : [ 0.0, 26.0, 996.0, 773.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -7106,8 +7148,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 77.0, 1154.0, 33.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSR can have each of it's segments scaled into a different range. It can also be given a list of default values which will both determine the shape of the envelope when it receives a bang, as well as the position for a point to return to when it is double clicked. When setting your own defaults, ensure they are within the ranges.",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -7120,8 +7169,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 15.0, 291.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -7807,7 +7863,7 @@
 
 							}
  ],
-						"originid" : "pat-122"
+						"originid" : "pat-229"
 					}
 ,
 					"patching_rect" : [ 152.380954742431641, 23.809524178504944, 131.0, 22.0 ],
@@ -7836,7 +7892,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1396.0, 773.0 ],
+						"rect" : [ 82.0, 126.0, 996.0, 773.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -7936,8 +7992,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 77.0, 1124.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI is based on the live.adsrui object. Its purpose is to bypass the glitch in the live.adsrui where parameters cannot be automated in Live when tethered to numboxes. It offers all the same control as live.adsrui as well as some handy extras, like variable padding for setting the display size and double clicking handles to reset to default values. The code can also be modified to add even further new features or to fine tune it to your exact needs.\nBy using a route object at the output, you can customise the output order from left to right or ignore controls that you don't need by simply not inlcuding them in route object.",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -7975,8 +8038,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 15.0, 291.0, 60.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : "themecolor.live_control_text_selection"
+										}
+
+									}
+,
 									"text" : "MS_ADSRUI",
-									"textcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
@@ -8804,7 +8874,7 @@
 
 							}
  ],
-						"originid" : "pat-124"
+						"originid" : "pat-231"
 					}
 ,
 					"patching_rect" : [ 41.269841909408569, 23.809524178504944, 47.0, 22.0 ],
@@ -8818,7 +8888,7 @@
 			}
  ],
 		"lines" : [  ],
-		"originid" : "pat-89",
+		"originid" : "pat-196",
 		"parameters" : 		{
 			"obj-18::obj-10" : [ "FinalGain[1]", "FinalGain", 0 ],
 			"obj-18::obj-11" : [ "ReleaseCurve[1]", "ReleaseCurve", 0 ],
