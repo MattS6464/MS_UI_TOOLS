@@ -45,17 +45,16 @@ var H = (box.rect[3] - box.rect[1]);
 var WP = [ 0.05 * W, W - (0.05 * W) ];
 var HP = [ 0.1 * H, H - (0.1 * H) ];
 
-
 ///////DRAWING//////////////
 var Res = 256;
 var SusEnd = 2 * WP[1] / 3 + WP[0];
 var MinL = 0.01 * WP[1];
-var MaxL = 0.3 * WP[1];
+var MaxL = 0.25 * WP[1];
 var HandleSize = 0.015 * WP[1];
 var CurveHandleSize = 0.75 * HandleSize;
 var LineWidth = 1.5;
 var HandleToggles = [1, 1, 1, 1];
-
+var BorderToggle = 0;
 
 ///////OUTPUT RANGE/////////
 var AttackRange = [10, 20000, 4];
@@ -77,8 +76,7 @@ var CurveHandleGain = [
 	HandleGain[2] + (HandleGain[1] - HandleGain[2]) / 2,
 	HandleGain[3] + (HandleGain[2] - HandleGain[3]) / 2
 ];
-		
-		
+				
 ///////Outputs///////////////
 var OutCurve = [0 , 0, 0];
 var Default = [10, 1000, 0.5, 1500, 0, 1, 0, 0, 0, 0];
@@ -162,8 +160,14 @@ function setHandleSize (v) {
 	mgraphics.redraw();
 }
 
+function enableBorder(v) {
+	v = Clip(v, 0, 1);
+	BorderToggle = v;
+	mgraphics.redraw();
+}
+
 function enableCurves(v) {
-	v = Clip(v, 0, 1)
+	v = Clip(v, 0, 1);
 	
 	if (v) {
 		HandleToggles[0] = true;
@@ -740,9 +744,34 @@ function paint(){
 		//Background//
 		set_source_rgba(BGColour);
 		rectangle(0, 0, W, H);
-		fill()
+		fill();
 		
-		//line///
+		//border//
+		set_source_rgba(LineColour);
+		if(BorderToggle) {
+			//top left
+			move_to(WP[0] / 2, HP[0] / 2);
+			line_to((WP[0] / 2) + WP[0], HP[0] / 2);
+			//top right
+			move_to(WP[1] - WP[0] / 2, HP[0] / 2);
+			line_to(WP[1] + WP[0] / 2, HP[0] / 2);
+			line_to(WP[1] + WP[0] / 2, (HP[0] / 2) + WP[0]);
+			//bottom right
+			move_to(WP[1] + WP[0] / 2, H - (HP[0] / 2) - WP[0]);
+			line_to(WP[1] + WP[0] / 2, H - (HP[0] / 2));
+			line_to(WP[1] - WP[0] / 2, H - (HP[0] / 2));
+			//bottom left
+			move_to((WP[0] / 2) + WP[0], H - (HP[0] / 2));
+			line_to(WP[0] / 2, H - (HP[0] / 2));
+			line_to(WP[0] / 2, H - (HP[0] / 2) - WP[0]);
+			//top left
+			move_to(WP[0] / 2, (HP[0] / 2) + WP[0]);
+			line_to(WP[0] / 2, HP[0] / 2);
+			
+			stroke();
+		}
+		
+		//line//
 		set_source_rgba(LineColour);
 		move_to(HandleTime[0], HandleGain[0])
 		for (i = 0; i <= Res; i++)
@@ -752,7 +781,7 @@ function paint(){
 		line_to(SusEnd, HandleGain[2])
 		for (i = 0; i <= Res; i++)
 			line_to( Scale(i, 0, Res, SusEnd, HandleTime[3], 1), Scale(i, 0, Res, HandleGain[2], HandleGain[3], Math.exp(-1.5*OutCurve[2])));
-		stroke()
+		stroke();
 		
 		//handles//
 		for (i = 0; i < 4; i++) {
