@@ -25,7 +25,13 @@ Functionally there is not much difference between using an **MS_CELL** or a `liv
 By default, MS_CELL is unable to save preset values when used in a MaxForLive device, however the `MS_CELL-Help.maxpat` file shows a clever way to recall presets.
 
 ## MS_SCOPE
-The **MS_SCOPE** is a basic scope used to display the contents of a `buffer~`, specifically a single cycle of a synthesiser, though it can be used for other displays. Its functionality can be left as a simple display, or two optional sliders can be activated to track the vertical and/or horizontal movement of the mouse when clicked and dragged. Both sliders can be individually tethered to a live object (e.g. `live.dial`) to set its value externally and to access the live preset system.
+The **MS_SCOPE** is a basic scope used to display the contents of a `buffer~`, specifically a single period of a synthesiser, though it can be used for other displays. Its functionality can be left as a simple display, or **two optional sliders** can be activated to track the vertical and/or horizontal movement of the mouse when clicked and dragged. Both sliders can be individually tethered to a live object (e.g. `live.dial`) to set its value externally and to access the live preset system.
 
 The primary purpose of these sliders is to control a parameter of an equation that shapes the wave displayed by the **MS_SCOPE**. The `MS_SCOPE-Help.maxpat` has two examples to show how these sliders can work, one uses both sliders to change the phase and wavefolding of a sine wave, and the other uses only the horizontal slider to change the distortion of a Phase Distortion synthesiser.
 
+## MS_DIAL
+**MS_DIAL** is a versatile dial designed for multiple roles withing a user interface. It can be toggled between **smooth mode** for continuous controls (e.g. filter cutoff) or **stepped mode** for discrete selections (e.g. filter type). **MS_DIAL** also contains an optional **modulation dial**, adjusted using shift + drag, that can be set to **unipolar**, **bipolar**, or **disabled**.
+
+By default, **MS_DIAL** sends the `hidden` message from its first and second outlets, ensuring that only the numbox tethered to the most recently clicked dial (main or modulation) is visible. This allows both numboxes to be stacked on top of each other in Presentation Mode, minimizing screen space. This feature can be disabled by sending `disable_hide_numboxes 1` to **MS_DIAL**.
+
+Given the wide range of possible states for **MS_DIAL**, setting a custom default state can reduce the need for additional custom setup messages within your Max patch. Inside the **JSUI** code, a clearly labelled section (`///////DEFAULT STATE////////`) contains modifiable variables for defining a new default state across all instances of **MS_DIAL** in your project.
