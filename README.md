@@ -1,7 +1,11 @@
 # MS_UI_TOOLS
-**_MS_UI_TOOLS_** is a collection of user interface objects coded in JavaScript for use in Max's `jsui` object. Each object fulfils a unique role in the user interface of a Max patch, whether it be for Max standalone or a MaxForLive device. They styled like user interface objects already present in Live’s stock devices. By providing the open-source code, objects can be easily used as a starting point to build upon and edit to fit specific case uses.
+**_MS_UI_TOOLS_** is a collection of user interface objects coded in JavaScript for use in Max's `jsui` object. Each object fulfils a unique role in the user interface of a Max patch, whether it be for Max standalone or a MaxForLive device. By providing the open-source code, objects can be easily used as a starting point to build upon and edit to fit specific case uses.
 
-Each folder contains the `js` file needed to use the `jsui` objects in Max which should be copied into the file path of the patch you want to use it in. They also each contain a maxpat file marked with `-Help`, which demo all the features of each object.
+Each folder contains a `js` file that should be loaded into a `jsui` object in Max, and should be copied into the same folder of the patch you want to use it in. They also each contain a maxpat file marked with `-Help`, which demo all the features of each object.
+
+**_Hardware-Inspired_** is a folder containing UI elements that are visually inspired by various hardware synthesizers. These components are less customizable than those in **MS_UI_TOOLS**, with a focus on fulfilling their core function (e.g., acting as a dial) while closely emulating the aesthetic of the original hardware.
+
+**Important:** When linking a **Hardware-Inspired** UI element to a `numbox`, always use the `set` message between the `numbox` and the UI tool. This prevents stack overflows and potential crashes caused by feedback loops.
 
 ***Should you use any of the code (edited or unedited) in a published device, please provide appropriate credit and do not remove the authorship at the top of each JavaScript File.***
 
